@@ -1,0 +1,35 @@
+body{
+	text-align: center;
+	font-family: "lucida console", Courier, monospace;
+	font-size: 20px;
+	background-color: violet;
+
+
+}
+
+img {
+	width: 200px;
+	height: 200px; 
+	border: 5px solid pink;
+	box-shadow: 7px 7px 7px 7px rgba(0,0,0,0.5);
+}
+
+table{
+	width: 700px;
+	height: 600px;
+	margin: auto;
+}
+
+tr{
+	font-size: 15px;
+	text-align: center;
+}
+
+button {
+  background-color: pink;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
