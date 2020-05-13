@@ -25,14 +25,14 @@
 		$img = htmlspecialchars($mkn['img']);
 		$nama = htmlspecialchars($mkn['nama']);
 		$berat = htmlspecialchars($mkn['berat']);
-		$kalori = htmlspecialchars($mkn['		kalori']);
+		$kalori = htmlspecialchars($mkn['kalori']);
 		$karbohidrat = htmlspecialchars($mkn['karbohidrat']);
 		$protein = htmlspecialchars($mkn['protein']);
 		$lemak = htmlspecialchars($mkn['lemak']);
 
 		$query = "INSERT INTO makanan
 		VALUES 
-		('', '$img', '$nama', '$berat', 'kalori', 'karbohidrat', 'protein', 'lemak')";
+		('', '$img', '$nama', $berat, $kalori, $karbohidrat, $protein, $lemak)";
 
 		mysqli_query($connect, $query);
 

@@ -25,14 +25,14 @@
 		$img = htmlspecialchars($mkn['img']);
 		$nama = htmlspecialchars($mkn['nama']);
 		$berat = htmlspecialchars($mkn['berat']);
-		$kalori = htmlspecialchars($mkn['		kalori']);
+		$kalori = htmlspecialchars($mkn['kalori']);
 		$karbohidrat = htmlspecialchars($mkn['karbohidrat']);
 		$protein = htmlspecialchars($mkn['protein']);
 		$lemak = htmlspecialchars($mkn['lemak']);
 
 		$query = "INSERT INTO makanan
 		VALUES 
-		('', '$img', '$nama', '$berat', '$kalori', '$karbohidrat', '$protein', '$lemak')";
+		('', '$img', '$nama', $berat, $kalori, $karbohidrat, $protein, $lemak)";
 
 		mysqli_query($connect, $query);
 
@@ -61,21 +61,22 @@
 
 		$query = "UPDATE makanan
 		SET 
-		id = '$id',
+		id = $id,
 		img = '$img',
 		nama = '$nama',
-		berat = '$berat',
-		kalori = '$kalori',
-		karbohidrat = '$karbohidrat',
-		protein = '$protein',
-		lemak = '$lemak'
-		WHERE id = '$id'";
+		berat = $berat,
+		kalori = $kalori,
+		karbohidrat = $karbohidrat,
+		protein = $protein,
+		lemak = $lemak
+		WHERE id = $id";
 
 		mysqli_query($connect, $query);
 
 		return mysqli_affected_rows($connect);
-	}
 
+
+	}
 		//fungsi registrasi
 
 		function registrasi($data) 

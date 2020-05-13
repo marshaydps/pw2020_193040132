@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 17, 2020 at 10:30 AM
+-- Generation Time: May 13, 2020 at 03:22 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -55,6 +55,25 @@ INSERT INTO `makanan` (`id`, `img`, `nama`, `berat`, `kalori`, `karbohidrat`, `p
 (9, '9.png', 'Ice cream coklat', 100, 216, 28, 4, 11),
 (10, '10.jpg', 'Alpukat', 100, 160, 8, 2, 15);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `username` varchar(64) NOT NULL,
+  `password` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`) VALUES
+(2, 'marsha', '$2y$10$cwKjVPmgcE0bQKcvJTHDrO9/hL2cRwRm63hkCk2T3ri82g5VE/WXK');
+
 --
 -- Indexes for dumped tables
 --
@@ -66,6 +85,12 @@ ALTER TABLE `makanan`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -73,7 +98,13 @@ ALTER TABLE `makanan`
 -- AUTO_INCREMENT for table `makanan`
 --
 ALTER TABLE `makanan`
-  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

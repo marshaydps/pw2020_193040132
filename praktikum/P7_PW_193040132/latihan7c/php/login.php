@@ -57,7 +57,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
-<body bgcolor="pink">
+<body bgcolor="violet">
 <link rel="stylesheet" type="text/css" href="">
 <form action="" method="post">
 	<?php if(isset($error)) : ?>

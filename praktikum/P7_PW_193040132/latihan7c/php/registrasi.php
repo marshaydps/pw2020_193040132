@@ -15,7 +15,7 @@ if(isset($_POST["register"])) {
 }
 ?>
 
-
+<body bgcolor="violet">
 <form action="" method="post">
 	<table>
 		<tr>
@@ -31,3 +31,4 @@ if(isset($_POST["register"])) {
 	</table>
 	<button type="submit" name="register">REGISTER</button>
 </form>
+</body>

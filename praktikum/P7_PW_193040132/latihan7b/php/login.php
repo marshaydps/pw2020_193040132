@@ -33,6 +33,7 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
+<body bgcolor="violet">
 <link rel="stylesheet" type="text/css" href="">
 <form action="" method="post">
 	<?php if(isset($error)) : ?>
@@ -60,3 +61,4 @@ if (isset($_POST['submit'])) {
 <div class="registrasi">
 	<p>Belum punya akun ? Registrasi <a href="registrasi.php">Disini</a></p>
 </div>
+</body>
