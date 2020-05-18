@@ -1,0 +1,117 @@
+.brand-logo {
+  font-family: Viga; 
+  font-size: 40px;
+}
+
+.tulisan {
+	font-family: 'Bree Serif', serif;
+	margin-top: 80px;
+	text-shadow: 3px 3px 3px rgba(0,0,0, 0.4);
+	font-size: 40px;
+	margin-bottom: auto;
+
+
+}
+
+section {
+	padding: 20px 0;
+	font-family: 'Bree Serif', serif;
+}
+
+
+
+/*login session*/
+.tulisan_login{
+    text-align: center;
+    /*membuat semua huruf menjadi kapital*/
+    text-transform: uppercase;
+}
+ 
+.kotak_login{
+    width: 350px;
+    box-shadow: -20px 20px 20px -20px grey;
+    border-radius: 25px;
+    border :1px solid grey;
+    /*meletakkan form ke tengah*/
+    margin: 80px auto;
+    padding: 30px 20px;
+}
+ 
+label{
+    font-size: 11pt;
+}
+.form_login{
+    /*membuat lebar form penuh*/
+    box-sizing : border-box; 
+    width: 100%;
+    padding: 10px;
+    font-size: 11pt;
+    margin-bottom: 20px;
+}
+ .foto{
+  float: left;
+ }
+.tombol_login{
+    background:#ff5050;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+ .tombol_registrasi{
+    background: brown;
+    color: white;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+ }
+.remember{
+float: left;
+color: red;
+text-shadow: 1px 1px 1px black;
+}
+
+
+.background {
+	background-image: url(../assets/img/bg5.jpg);
+	background-size: cover;
+}
+
+.parallax-container {
+    height: 360px;
+    font-family: 'Bree Serif', serif;
+   
+}
+
+
+h2 {
+        font-family: 'Bree Serif', serif;
+
+
+}
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  h5{
+    font-family: 'Bree Serif', serif !important;
+
+  }
+
+  button {
+
+     font-family: 'Bree Serif', serif !important;
+     color: white !important;
+  }
+
+  
